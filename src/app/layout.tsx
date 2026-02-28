@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-
 export const metadata: Metadata = {
-  title: "Will AI Replace Me?",
-  description: "Enter your job title and find out when AI will replace you. Brutal honesty included.",
+  title: "Will AI Replace Me? — Career Risk Assessment",
+  description: "Enter your job title. Get a brutally honest AI replacement assessment.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
